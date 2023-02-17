@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+</head>
+<body>
+    <h3>Input student's name</h3>
+    <input type="text" name="" id="name">
+    <h3>Number grades - - - - - - Letter grades</h3> 
+    <h4>1º grade</h4>
+    <input type="number" name="grade" id="g1" onchange="calculateLetterGrade('g1', 'lg1')"><input type="text" name="" id="lg1" value=""> 
+    <h4>2º grade</h4>
+    <input type="number" name="grade" id="g2" onchange="calculateLetterGrade('g2', 'lg2')"><input type="text" name="" id="lg2" value="">
+    <h4>3º grade</h4>
+    <input type="number" name="grade" id="g3" onchange="calculateLetterGrade('g3', 'lg3')"><input type="text" name="" id="lg3" value="">
+    <h4>4º grade</h4>
+    <input type="number" name="grade" id="g4" onchange="calculateLetterGrade('g4', 'lg4')"><input type="text" name="" id="lg4" value="">
+    <hr>
+    <button onclick="calculate()">calculate</button>
+    <p id="avarage"></p>
+    <script src="./assets/js/ascript.js"></script>
+</body>
+</html>
